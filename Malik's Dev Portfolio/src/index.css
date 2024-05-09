@@ -1,0 +1,102 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* General body styling */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header styling */
+.headerOne {
+  text-align: center;
+  font-size: 3em; /* Larger font size for main header */
+}
+
+h4 {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8; /* Slightly dimmed compared to other texts for a subtle effect */
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0)); /*CHATGPT*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #444;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for transform and box-shadow */
+}
+
+li:hover {
+  transform: scale(1.02); /* Scales up the item to create a "pop" effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6); /* Adds a shadow to make it look like it's floating */
+  background-color: #727171;
+  overflow-x: hidden;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+span {
+  padding: 5px 10px;
+  background-color: #555;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+  .headerOne {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1em; 
+  }
+
+  body {
+    padding: 10px; 
+  }
+
+  li {
+    padding: 10px; 
+  }
+}
+@media (max-width: 480px) {
+  .headerOne {
+    font-size: 1.5em; 
+  }
+
+  h4 {
+    font-size: 0.85em; 
+  }
+
+  li {
+    font-size: 0.85em; 
+  }
+}
